@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CredFácil | Soluções Financeiras</title>
+
+<style>
+:root{
+--verde:#018E48;
+--laranja:#F0821F;
+--branco:#ffffff;
+--cinza:#f3f5f4;
+}
+
+body{
+margin:0;
+font-family:'Segoe UI', sans-serif;
+background:var(--cinza);
+color:#333;
+overflow-x:hidden;
+}
+
+/* HEADER COM LOGO */
+.topo{
+background:white;
+padding:15px 0;
+box-shadow:0 4px 15px rgba(0,0,0,0.05);
+text-align:center;
+}
+
+.topo img{
+height:60px;
+}
+
+/* HERO PREMIUM */
+.hero{
+background:linear-gradient(135deg,var(--verde),#016637,var(--laranja));
+background-size:200% 200%;
+animation:gradientMove 8s ease infinite;
+color:white;
+padding:90px 20px;
+position:relative;
+overflow:hidden;
+}
+
+@keyframes gradientMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+position:relative;
+z-index:2;
+}
+
+.hero-content{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:space-between;
+gap:40px;
+}
+
+.hero-text{
+flex:1;
+min-width:280px;
+animation:fadeUp 1s ease forwards;
+}
+
+.hero-text h1{
+font-size:34px;
+margin-bottom:15px;
+}
+
+.hero-text p{
+font-size:18px;
+margin-bottom:25px;
+}
+
+.btn{
+background:white;
+color:var(--verde);
+padding:15px 35px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.07);
+}
+
+/* FOTO CONSULTORA */
+.hero-img{
+flex:1;
+text-align:center;
+animation:fadeUp 1.3s ease forwards;
+}
+
+.hero-img img{
+width:230px;
+border-radius:50%;
+border:6px solid white;
+box-shadow:0 15px 30px rgba(0,0,0,0.25);
+}
+
+/* MASCOTE */
+.mascote{
+position:absolute;
+bottom:0;
+right:40px;
+width:180px;
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-15px);}
+}
+
+@keyframes fadeUp{
+from{opacity:0; transform:translateY(30px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+/* SOBRE */
+.sobre{
+padding:80px 20px;
+text-align:center;
+background:white;
+}
+
+.sobre h2{
+color:var(--verde);
+font-size:28px;
+}
+
+.sobre p{
+max-width:750px;
+margin:auto;
+font-size:17px;
+line-height:1.7;
+}
+
+/* SERVIÇOS */
+.servicos{
+padding:80px 20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+max-width:1100px;
+margin:auto;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+border-top:5px solid var(--laranja);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(0,0,0,0.12);
+}
+
+.card h3{
+color:var(--verde);
+}
+
+/* CTA */
+.cta{
+background:var(--verde);
+color:white;
+text-align:center;
+padding:70px 20px;
+}
+
+.cta a{
+background:var(--laranja);
+color:white;
+padding:15px 40px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+display:inline-block;
+margin-top:20px;
+transition:0.3s;
+}
+
+.cta a:hover{
+transform:scale(1.08);
+}
+
+/* WHATSAPP FIXO */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:var(--verde);
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 6px 15px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.whatsapp:hover{
+transform:scale(1.1);
+}
+
+@media(max-width:768px){
+.hero-content{
+flex-direction:column;
+text-align:center;
+}
+.mascote{
+display:none;
+}
+.hero-text h1{
+font-size:26px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOPO COM LOGO -->
+<div class="topo">
+<img src="logo.png" alt="CredFácil">
+</div>
+
+<!-- HERO -->
+<section class="hero">
+<div class="container hero-content">
+
+<div class="hero-text">
+<h1>Crédito Rápido e Seguro com Atendimento Especializado</h1>
+<p>INSS • Servidores • FGTS • Veículos • Conta de Luz</p>
+<a href="https://wa.me/5521972208880" class="btn">SIMULAR AGORA</a>
+</div>
+
+<div class="hero-img">
+<img src="liliane.jpg" alt="Liliane A. Figueiredo">
+</div>
+
+</div>
+
+<img src="mascote.png" class="mascote" alt="Mascote CredFácil">
+</section>
+
+<!-- SOBRE -->
+<section class="sobre">
+<h2>Liliane A. Figueiredo</h2>
+<p>
+Consultora de Crédito com mais de 15 anos de experiência no mercado financeiro.
+Profissional certificada e especialista em crédito consignado, FGTS e financiamento.
+Atendimento estratégico, humanizado e totalmente personalizado.
+</p>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="servicos">
+<div class="grid">
+
+<div class="card"><h3>Crédito Pessoal</h3><p>Análise rápida e condições facilitadas.</p></div>
+<div class="card"><h3>INSS</h3><p>Consignado para aposentados e pensionistas.</p></div>
+<div class="card"><h3>Servidor Público</h3><p>Taxas reduzidas e aprovação facilitada.</p></div>
+<div class="card"><h3>Saque FGTS</h3><p>Antecipe seu saque aniversário.</p></div>
+<div class="card"><h3>Conta de Luz</h3><p>Parcelas na conta de energia.</p></div>
+<div class="card"><h3>Garantia de Veículo</h3><p>Valores maiores com taxas menores.</p></div>
+
+</div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta">
+<h2>Pronta para liberar seu crédito?</h2>
+<p>Fale agora mesmo e receba atendimento imediato.</p>
+<a href="https://wa.me/5521972208880">FALAR NO WHATSAPP</a>
+</section>
+
+<a href="https://wa.me/5521972208880" class="whatsapp">WhatsApp</a>
+
+</body>
+</html>
