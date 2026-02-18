@@ -9,7 +9,7 @@
 <style>
 
 .logo {
-    height: 100px; /* AUMENTADA */
+    height: 700px; /* AUMENTADA */
     width: auto;
     transition: 0.3s ease;
 }
@@ -25,8 +25,8 @@
 
 
 :root{
---verde:#018E48;
---laranja:#F0821F;
+--verde:#156B0C;
+--laranja:#F5500;
 --branco:#ffffff;
 --cinza:#f3f5f4;
 }
@@ -40,18 +40,21 @@ overflow-x:hidden;
 }
 
 /* HEADER COM LOGO */
-.topo{
-background:white;<header class="header">
-    <div class="container header-container">
-        <img src="logo.png" alt="Logo Credfácil" class="logo">
-        <a href="#formulario" class="btn-header">Simular Agora</a>
+.topo{text-align:center;
+background:white;<header class="topo">
+    <div class="logo-container">
+        <img src="logo.png" alt="Credfácil" class="logo">
     </div>
+
+    <p class="slogan">
+        Credfácil — Crédito Aprovado com Agilidade e Segurança
+    </p>
 </header>
 
 }
 
 .topo img{
-height:60px;
+height:700px;
 }
 
 /* HERO PREMIUM */
@@ -83,7 +86,7 @@ z-index:2;
 display:flex;
 flex-wrap:wrap;
 align-items:center;
-justify-content:space-between;
+justify-content:center;
 gap:40px;
 }
 
@@ -145,7 +148,7 @@ box-shadow:0 15px 30px rgba(0,0,0,0.25);
 }
 
 .foto-consultora img {
-    width: 320px;
+    width: 200px;
     border-radius: 20px;
     box-shadow: 0px 20px 40px rgba(0,0,0,0.15);
     transition: 0.4s ease;
@@ -205,8 +208,17 @@ background:white;
 }
 
 .sobre h2{
-color:var(--verde);
-font-size:28px;
+.nome-consultora {
+    font-size: 18px;
+    font-weight: 500;
+    color: #444;
+}
+
+.cargo-consultora {
+    font-size: 16px;
+    font-weight: 600;
+    color: #018E48;
+}
 }
 
 .sobre p{
@@ -319,7 +331,7 @@ font-size:26px;
 
 <div class="hero-text">
 <h1>Crédito Rápido e Seguro com Atendimento Especializado</h1>
-<p>INSS • Servidores • FGTS • Veículos • Conta de Luz</p>
+<p>INSS • Servidores • CLT • FGTS • Veículos • Conta de Luz e muitas outras modalidades de crédito</p>
 <a href="https://wa.me/5521972208880" class="btn">SIMULAR AGORA</a>
 </div>
 
@@ -352,8 +364,9 @@ Atendimento estratégico, humanizado e totalmente personalizado.
             <h2>Especialista em Crédito</h2>
             
             <p>
-                Atendimento personalizado em crédito pessoal, consignado INSS,
-                servidores públicos, forças armadas, saque FGTS e muito mais.
+                Atendimento personalizado em Crédito pessoal, Consignado INSS,
+                Servidores Públicos, Forças Armadas, Saque FGTS, negativados, Financiamento de Veículos e Imóveis
+                e muito mais.
             </p>
             <p>
                 Segurança, rapidez e aprovação facilitada.
@@ -383,9 +396,9 @@ Atendimento estratégico, humanizado e totalmente personalizado.
 
 <!-- CTA FINAL -->
 <section class="cta">
-<h2>Pronta para liberar seu crédito?</h2>
+<h2>Pronto para liberar seu crédito?</h2>
 <p>Fale agora mesmo e receba atendimento imediato.</p>
-<a href="https://wa.me/5521972208880">FALAR NO WHATSAPP</a>
+<a href="https://wa.me/5521972208880">SOLICITAR SIMULAÇÃO</a>
 </section>
 
 <a href="https://wa.me/5521972208880" class="whatsapp">WhatsApp</a>
